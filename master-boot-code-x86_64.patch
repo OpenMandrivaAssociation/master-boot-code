@@ -1,0 +1,8 @@
+--- master-boot-code-1.14/Makefile.orig	2011-06-07 20:01:03.495105832 -0300
++++ master-boot-code-1.14/Makefile	2011-06-07 20:01:13.797158032 -0300
+@@ -1,4 +1,4 @@
+ mbr: mbr.S 
+ 	gcc -m32 -c mbr.S -I. -DNO_BANNER -DNO_CHS -o mbr.o
+-	ld -e start -Ttext 0x600 mbr.o -o mbr_tmp
++	ld -melf_i386 -e start -Ttext 0x600 mbr.o -o mbr_tmp
+ 	objcopy -O binary mbr_tmp mbr
