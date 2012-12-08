@@ -1,0 +1,2 @@
+# It's OK here
+addFilter("E: empty-debuginfo-package")
