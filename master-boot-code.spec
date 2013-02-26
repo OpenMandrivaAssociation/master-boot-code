@@ -2,7 +2,7 @@ Name:		master-boot-code
 License:	BSD 3-Clause
 Group:		System/Kernel and hardware
 Version:	1.14
-Release:	2
+Release:	3
 Summary:	i386 Master Boot Record Code
 URL:		http://www.novell.com/products/linuxpackages/opensuse/master-boot-code.html
 Source0:	master-boot-code.tar.bz2
@@ -21,7 +21,7 @@ Authors:
     The Regents of the University of California
 
 %prep
-%setup -n %{name}-%{version}
+%setup -q
 
 %ifarch x86_64
 %patch0 -p1
