@@ -3,7 +3,7 @@ Name:		master-boot-code
 License:	BSD 3-Clause
 Group:		System/Kernel and hardware
 Version:	1.14
-Release:	4
+Release:	5
 Url:		http://www.novell.com/products/linuxpackages/opensuse/master-boot-code.html
 Source0:	master-boot-code.tar.bz2
 Source1:	%{name}.rpmlintrc
