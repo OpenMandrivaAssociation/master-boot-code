@@ -10,6 +10,7 @@ Source1:	%{name}.rpmlintrc
 Patch0:		master-boot-code-x86_64.patch
 Exclusivearch:	%ix86 x86_64 amd64 ia32e
 
+BuildRequires:	make
 %description
 The i386 master boot code is code that, after copied to the MBR of the
 boot disk, loads and starts the boot sector of the active partition.
